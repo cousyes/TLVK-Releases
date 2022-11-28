@@ -1,0 +1,41 @@
+<profiles>
+	<profile id="Wasp M3">
+		<speed>1300</speed>
+		<turnSpeed>2.6179938</turnSpeed>
+		<acceleration>1300</acceleration>
+		<deceleration>1300</deceleration>
+		<reverseAcceleration>1700</reverseAcceleration>
+		<sideAcceleration>2400</sideAcceleration>
+		<turnAcceleration>3.4906585</turnAcceleration>
+		<turnDeceleration>3.4906585</turnDeceleration>
+		<reverseTurnAcceleration>6.4577184</reverseTurnAcceleration>
+		<damping>900</damping>
+		<mass>2200</mass>
+	</profile>
+	<profile id="Hornet M3">
+		<speed>1200</speed>
+		<turnSpeed>2.268928</turnSpeed>
+		<acceleration>1400</acceleration>
+		<deceleration>1400</deceleration>
+		<reverseAcceleration>2300</reverseAcceleration>
+		<sideAcceleration>1200</sideAcceleration>
+		<turnAcceleration>2.9670596</turnAcceleration>
+		<turnDeceleration>2.9670596</turnDeceleration>
+		<reverseTurnAcceleration>5.5850534</reverseTurnAcceleration>
+		<damping>1250</damping>
+		<mass>2400</mass>
+	</profile>
+	<profile id="Hopper M3">
+		<speed>1200</speed>
+		<turnSpeed>2.268928</turnSpeed>
+		<acceleration>1400</acceleration>
+		<deceleration>100</deceleration>
+		<reverseAcceleration>2300</reverseAcceleration>
+		<sideAcceleration>0</sideAcceleration>
+		<turnAcceleration>2.9670596</turnAcceleration>
+		<turnDeceleration>2.9670596</turnDeceleration>
+		<reverseTurnAcceleration>5.5850534</reverseTurnAcceleration>
+		<damping>1250</damping>
+		<mass>2400</mass>
+	</profile>
+</profiles>

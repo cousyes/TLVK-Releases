@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config skyboxRevolutionSpeed="0" fogColor="14545407" lightColor="13090219" shadowColor="5530735" angleX="-1" angleZ="-0.5" ssaoColor="3025184" gravity="1000" ambient="Battle">
+  <proplibs>
+    <proplib url="library/Landv1Old.tara" archive="true" />
+    <proplib url="library/Elementsv1Old.tara" archive="true" />
+    <proplib url="library/Buildingsv1Old.tara" archive="true" />
+  </proplibs>
+  <firebird>
+    <effect name="Обычный" muzzle="FireBird Default Muzzle" muzzleLight="FireBird Default Start" fireball="FireBird Default Fireball" fireballLight="FireBird Default Loop" />
+    <effect name="Черный" muzzle="FireBird Black Muzzle" muzzleLight="FireBird Black Start" fireball="FireBird Black Fireball" fireballLight="FireBird Black Loop" />
+    <effect name="Багровый" muzzle="FireBird Crimson Muzzle" muzzleLight="FireBird Crimson Start" fireball="FireBird Crimson Fireball" fireballLight="FireBird Crimson Loop" />
+    <effect name="Магма" muzzle="FireBird Magma Muzzle" muzzleLight="FireBird Magma Start" fireball="FireBird Magma Fireball" fireballLight="FireBird Magma Loop" />
+    <effect name="Розовый" muzzle="FireBird Pink Muzzle" muzzleLight="FireBird Pink Start" fireball="FireBird Pink Fireball" fireballLight="FireBird Pink Loop" />
+  </firebird>
+  <freeze>
+    <effect name="Обычный" muzzle="Freeze Default Muzzle" muzzleLight="Freeze Default Start" fireball="Freeze Default Fireball" fireballLight="Freeze Default Loop" />
+    <effect name="Ядовитый" muzzle="Freeze Toxic Muzzle" muzzleLight="Freeze Toxic Start" fireball="Freeze Toxic Fireball" fireballLight="Freeze Toxic Loop" />
+    <effect name="Холодный" muzzle="Freeze Cold Muzzle" muzzleLight="Freeze Cold Start" fireball="Freeze Cold Fireball" fireballLight="Freeze Cold Loop" />
+  </freeze>
+  <textures>
+    <!--SkyBox sides-->
+    <texture id="SkyBox 1" url="skybox/01.jpg" />
+    <texture id="SkyBox 2" url="skybox/02.jpg" />
+    <texture id="SkyBox 3" url="skybox/03.jpg" />
+    <texture id="SkyBox 4" url="skybox/04.jpg" />
+    <texture id="SkyBox 5" url="skybox/05.jpg" />
+    <texture id="SkyBox 6" url="skybox/06.jpg" />
+    <!--FireBird-->
+    <texture id="FireBird Default Muzzle" url="weapons/firebird/default/muzzle.png" />
+    <texture id="FireBird Black Muzzle" url="weapons/firebird/black/muzzle.png" />
+    <texture id="FireBird Crimson Muzzle" url="weapons/firebird/crimson/muzzle.png" />
+    <texture id="FireBird Magma Muzzle" url="weapons/firebird/magma/muzzle.png" />
+    <texture id="FireBird Pink Muzzle" url="weapons/firebird/pink/muzzle.png" />
+    <texture id="FireBird Default Fireball" url="weapons/firebird/default/fireball.png" />
+    <texture id="FireBird Black Fireball" url="weapons/firebird/black/fireball.png" />
+    <texture id="FireBird Crimson Fireball" url="weapons/firebird/crimson/fireball.png" />
+    <texture id="FireBird Magma Fireball" url="weapons/firebird/magma/fireball.png" />
+    <texture id="FireBird Pink Fireball" url="weapons/firebird/pink/fireball.png" />
+    <!--Freeze-->
+    <texture id="Freeze Default Muzzle" url="weapons/freeze/default/muzzle.png" />
+    <texture id="Freeze Toxic Muzzle" url="weapons/freeze/toxic/muzzle.png" />
+    <texture id="Freeze Cold Muzzle" url="weapons/freeze/cold/muzzle.png" />
+    <texture id="Freeze Default Fireball" url="weapons/freeze/Default/fireball.png" />
+    <texture id="Freeze Toxic Fireball" url="weapons/freeze/toxic/fireball.png" />
+    <texture id="Freeze Cold Fireball" url="weapons/freeze/cold/fireball.png" />
+    <texture id="Dust" url="dust.png" />
+    <texture id="Smoke" url="smoke.png" />
+  </textures>
+  <sounds baseUrl="data/sounds/">
+    <sound id="Battle" url="battle.mp3" />
+    <sound id="Space" url="space.mp3" />
+    <sound id="Halloween" url="halloween.mp3" />
+    <sound id="Idle" url="tank/idle.mp3" />
+    <sound id="Motion" url="tank/motion.mp3" />
+    <sound id="Accelerate" url="tank/accelerate.mp3" />
+    <sound id="Turret" url="tank/turret.mp3" />
+    <sound id="Overdrive" url="tank/overdrive.mp3" />
+    <sound id="FireBird" url="weapons/firebird.mp3" />
+    <sound id="Freeze" url="weapons/freeze.mp3" />
+    <sound id="Rankup" url="tank/rankup.mp3" />
+  </sounds>
+  <textureAnimations>
+    <animation id="FireBird Default Muzzle" texture="FireBird Default Muzzle">
+      <params frameWidth="255" frameHeight="50" numFrames="5" fps="30" />
+    </animation>
+    <animation id="FireBird Black Muzzle" texture="FireBird Black Muzzle">
+      <params frameWidth="255" frameHeight="50" numFrames="5" fps="30" />
+    </animation>
+    <animation id="FireBird Crimson Muzzle" texture="FireBird Crimson Muzzle">
+      <params frameWidth="255" frameHeight="50" numFrames="5" fps="30" />
+    </animation>
+    <animation id="FireBird Magma Muzzle" texture="FireBird Magma Muzzle">
+      <params frameWidth="255" frameHeight="50" numFrames="5" fps="30" />
+    </animation>
+    <animation id="FireBird Pink Muzzle" texture="FireBird Pink Muzzle">
+      <params frameWidth="255" frameHeight="50" numFrames="5" fps="30" />
+    </animation>
+    <animation id="FireBird Default Fireball" texture="FireBird Default Fireball">
+      <params frameWidth="128" frameHeight="128" numFrames="51" fps="30" />
+    </animation>
+    <animation id="FireBird Black Fireball" texture="FireBird Black Fireball">
+      <params frameWidth="128" frameHeight="128" numFrames="51" fps="30" />
+    </animation>
+    <animation id="FireBird Crimson Fireball" texture="FireBird Crimson Fireball">
+      <params frameWidth="128" frameHeight="128" numFrames="51" fps="30" />
+    </animation>
+    <animation id="FireBird Magma Fireball" texture="FireBird Magma Fireball">
+      <params frameWidth="128" frameHeight="128" numFrames="51" fps="30" />
+    </animation>
+    <animation id="FireBird Pink Fireball" texture="FireBird Pink Fireball">
+      <params frameWidth="128" frameHeight="128" numFrames="51" fps="30" />
+    </animation>
+    <animation id="Freeze Toxic Muzzle" texture="Freeze Toxic Muzzle">
+      <params frameWidth="256" frameHeight="150" numFrames="11" fps="30" />
+    </animation>
+    <animation id="Freeze Default Muzzle" texture="Freeze Default Muzzle">
+      <params frameWidth="256" frameHeight="150" numFrames="11" fps="30" />
+    </animation>
+    <animation id="Freeze Cold Muzzle" texture="Freeze Cold Muzzle">
+      <params frameWidth="256" frameHeight="150" numFrames="11" fps="30" />
+    </animation>
+    <animation id="Freeze Toxic Fireball" texture="Freeze Toxic Fireball">
+      <params frameWidth="128" frameHeight="128" numFrames="13" fps="30" />
+    </animation>
+    <animation id="Freeze Default Fireball" texture="Freeze Default Fireball">
+      <params frameWidth="128" frameHeight="128" numFrames="13" fps="30" />
+    </animation>
+    <animation id="Freeze Cold Fireball" texture="Freeze Cold Fireball">
+      <params frameWidth="128" frameHeight="128" numFrames="13" fps="30" />
+    </animation>
+    <animation id="Dust" texture="Dust">
+      <params frameWidth="32" frameHeight="32" numFrames="15" fps="30" />
+    </animation>
+    <animation id="Smoke" texture="Smoke">
+      <params frameWidth="128" frameHeight="128" numFrames="25" fps="30" />
+    </animation>
+  </textureAnimations>
+  <lightAnimations>
+    <animation id="FireBird Default Start">
+      <item attenuationBegin="1" attenuationEnd="2" color="16746496" intensity="0" time="0" />
+      <item attenuationBegin="100" attenuationEnd="1000" color="16746496" intensity="1" time="200" />
+    </animation>
+    <animation id="FireBird Black Start">
+      <item attenuationBegin="1" attenuationEnd="2" color="0xFFFFFF" intensity="0" time="0" />
+      <item attenuationBegin="100" attenuationEnd="1000" color="0xFFFFFF" intensity="1" time="200" />
+    </animation>
+    <animation id="FireBird Crimson Start">
+      <item attenuationBegin="1" attenuationEnd="2" color="0xFF0000" intensity="0" time="0" />
+      <item attenuationBegin="100" attenuationEnd="1000" color="0xFF0000" intensity="1" time="200" />
+    </animation>
+    <animation id="FireBird Magma Start">
+      <item attenuationBegin="1" attenuationEnd="2" color="0xFFA500" intensity="0" time="0" />
+      <item attenuationBegin="100" attenuationEnd="1000" color="0xFFA500" intensity="1" time="200" />
+    </animation>
+    <animation id="FireBird Pink Start">
+      <item attenuationBegin="1" attenuationEnd="2" color="0xFF748C" intensity="0" time="0" />
+      <item attenuationBegin="100" attenuationEnd="1000" color="0xFF748C" intensity="1" time="200" />
+    </animation>
+    <animation id="FireBird Default Loop">
+      <item attenuationBegin="50" attenuationEnd="1000" color="16746496" intensity="1" time="0" />
+      <item attenuationBegin="150" attenuationEnd="800" color="16746496" intensity="1" time="100" />
+      <item attenuationBegin="100" attenuationEnd="1500" color="16746496" intensity="1" time="200" />
+      <item attenuationBegin="150" attenuationEnd="800" color="16746496" intensity="1" time="300" />
+      <item attenuationBegin="50" attenuationEnd="1000" color="16746496" intensity="1" time="400" />
+    </animation>
+    <animation id="FireBird Black Loop">
+      <item attenuationBegin="50" attenuationEnd="1000" color="0xFFFFFF" intensity="1" time="0" />
+      <item attenuationBegin="150" attenuationEnd="800" color="0xFFFFFF" intensity="1" time="100" />
+      <item attenuationBegin="100" attenuationEnd="1500" color="0xFFFFFF" intensity="1" time="200" />
+      <item attenuationBegin="150" attenuationEnd="800" color="0xFFFFFF" intensity="1" time="300" />
+      <item attenuationBegin="50" attenuationEnd="1000" color="0xFFFFFF" intensity="1" time="400" />
+    </animation>
+    <animation id="FireBird Crimson Loop">
+      <item attenuationBegin="50" attenuationEnd="1000" color="0xFF0000" intensity="1" time="0" />
+      <item attenuationBegin="150" attenuationEnd="800" color="0xFF0000" intensity="1" time="100" />
+      <item attenuationBegin="100" attenuationEnd="1500" color="0xFF0000" intensity="1" time="200" />
+      <item attenuationBegin="150" attenuationEnd="800" color="0xFF0000" intensity="1" time="300" />
+      <item attenuationBegin="50" attenuationEnd="1000" color="0xFF0000" intensity="1" time="400" />
+    </animation>
+    <animation id="FireBird Magma Loop">
+      <item attenuationBegin="50" attenuationEnd="1000" color="0xFFA500" intensity="1" time="0" />
+      <item attenuationBegin="150" attenuationEnd="800" color="0xFFA500" intensity="1" time="100" />
+      <item attenuationBegin="100" attenuationEnd="1500" color="0xFFA500" intensity="1" time="200" />
+      <item attenuationBegin="150" attenuationEnd="800" color="0xFFA500" intensity="1" time="300" />
+      <item attenuationBegin="50" attenuationEnd="1000" color="0xFFA500" intensity="1" time="400" />
+    </animation>
+    <animation id="FireBird Pink Loop">
+      <item attenuationBegin="50" attenuationEnd="1000" color="0xFF748C" intensity="1" time="0" />
+      <item attenuationBegin="150" attenuationEnd="800" color="0xFF748C" intensity="1" time="100" />
+      <item attenuationBegin="100" attenuationEnd="1500" color="0xFF748C" intensity="1" time="200" />
+      <item attenuationBegin="150" attenuationEnd="800" color="0xFF748C" intensity="1" time="300" />
+      <item attenuationBegin="50" attenuationEnd="1000" color="0xFF748C" intensity="1" time="400" />
+    </animation>
+    <animation id="Freeze Default Start">
+      <item attenuationBegin="1" attenuationEnd="2" color="65535" intensity="0" time="0" />
+      <item attenuationBegin="50" attenuationEnd="1500" color="65535" intensity="0.3" time="200" />
+    </animation>
+    <animation id="Freeze Toxic Start">
+      <item attenuationBegin="1" attenuationEnd="2" color="0x7CFC00" intensity="0" time="0" />
+      <item attenuationBegin="50" attenuationEnd="1500" color="0x7CFC00" intensity="0.3" time="200" />
+    </animation>
+    <animation id="Freeze Cold Start">
+      <item attenuationBegin="1" attenuationEnd="2" color="0x0080C0" intensity="0" time="0" />
+      <item attenuationBegin="50" attenuationEnd="1500" color="0x0080C0" intensity="0.3" time="200" />
+    </animation>
+    <animation id="Freeze Default Loop">
+      <item attenuationBegin="50" attenuationEnd="1500" color="65535" intensity="0.3" time="0" />
+      <item attenuationBegin="150" attenuationEnd="1000" color="65535" intensity="0.3" time="200" />
+      <item attenuationBegin="100" attenuationEnd="1500" color="65535" intensity="0.3" time="400" />
+      <item attenuationBegin="150" attenuationEnd="1000" color="65535" intensity="0.3" time="600" />
+      <item attenuationBegin="50" attenuationEnd="1500" color="65535" intensity="0.3" time="800" />
+    </animation>
+    <animation id="Freeze Toxic Loop">
+      <item attenuationBegin="50" attenuationEnd="1500" color="0x7CFC00" intensity="0.3" time="0" />
+      <item attenuationBegin="150" attenuationEnd="1000" color="0x7CFC00" intensity="0.3" time="200" />
+      <item attenuationBegin="100" attenuationEnd="1500" color="0x7CFC00" intensity="0.3" time="400" />
+      <item attenuationBegin="150" attenuationEnd="1000" color="0x7CFC00" intensity="0.3" time="600" />
+      <item attenuationBegin="50" attenuationEnd="1500" color="0x7CFC00" intensity="0.3" time="800" />
+    </animation>
+    <animation id="Freeze Cold Loop">
+      <item attenuationBegin="50" attenuationEnd="1500" color="0x0080C0" intensity="0.3" time="0" />
+      <item attenuationBegin="150" attenuationEnd="1000" color="0x0080C0" intensity="0.3" time="200" />
+      <item attenuationBegin="100" attenuationEnd="1500" color="0x0080C0" intensity="0.3" time="400" />
+      <item attenuationBegin="150" attenuationEnd="1000" color="0x0080C0" intensity="0.3" time="600" />
+      <item attenuationBegin="50" attenuationEnd="1500" color="0x0080C0" intensity="0.3" time="800" />
+    </animation>
+  </lightAnimations>
+  <hulls>
+    <hull id="Wasp HD" path="wasp/HD">
+      <params profile="Wasp M3" isHover="false" isInvertTracksDirection="false" />
+    </hull>
+    <hull id="Wasp LC" path="wasp/LC">
+      <params profile="Wasp M3" isHover="false" />
+    </hull>
+    <hull id="Hornet HD" path="hornet/HD">
+      <params profile="Hornet M3" isHover="false" isInvertTracksDirection="false" />
+    </hull>
+    <hull id="Hornet LC" path="hornet/LC">
+      <params profile="Hornet M3" isHover="false" />
+    </hull>
+    <hull id="Hopper HD" path="hopper/HD">
+      <params profile="Hopper M3" isHover="true" />
+    </hull>
+  </hulls>
+  <turrets>
+    <turret id="FireBird HD" path="firebird/HD" />
+    <turret id="Freeze HD" path="freeze/HD" />
+  </turrets>
+  <paints>
+    <paint id="Green" path="garage/Green.jpg" />
+    <paint id="Holiday" path="garage/Holiday.jpg" />
+    <paint id="Holiday Old" path="garage/Holiday Old.jpg" />
+    <paint id="Bunny" path="animated/Bunny.jpg">
+      <params frameWidth="128" frameHeight="128" fps="24" numFrames="64" />
+    </paint>
+    <paint id="Busted" path="animated/Busted.jpg">
+      <params frameWidth="128" frameHeight="128" fps="32" numFrames="64" />
+    </paint>
+    <paint id="Ginga" path="animated/Ginga.jpg">
+      <params frameWidth="32" frameHeight="32" fps="15" numFrames="30" />
+    </paint>
+    <paint id="LOL" path="animated/LOL.jpg">
+      <params frameWidth="128" frameHeight="128" fps="30" numFrames="64" />
+    </paint>
+    <paint id="Matrix" path="animated/Matrix.jpg">
+      <params frameWidth="64" frameHeight="64" fps="18" numFrames="10" />
+    </paint>
+  </paints>
+  <drones>
+    <drone id="Brutus" path="brutus" />
+  </drones>
+  <bonuses>
+    <bonus id="Gold HD" path="gold/hd" />
+  </bonuses>
+</config>
