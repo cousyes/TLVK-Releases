@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <config skyboxRevolutionSpeed="0" fogColor="14545407" lightColor="13090219" shadowColor="5530735" angleX="-1" angleZ="-0.5" ssaoColor="3025184" gravity="1000" ambient="Battle">
   <proplibs>
-    <proplib url="library/Landv1Old.tara" archive="true" />
-    <proplib url="library/Elementsv1Old.tara" archive="true" />
-    <proplib url="library/Buildingsv1Old.tara" archive="true" />
+    <proplib url="library/LandscapeOld.tara" archive="true" />
+    <proplib url="library/BuildsOld.tara" archive="true" />
   </proplibs>
   <firebird>
     <effect name="Обычный" muzzle="FireBird Default Muzzle" muzzleLight="FireBird Default Start" fireball="FireBird Default Fireball" fireballLight="FireBird Default Loop" />
@@ -17,15 +16,58 @@
     <effect name="Ядовитый" muzzle="Freeze Toxic Muzzle" muzzleLight="Freeze Toxic Start" fireball="Freeze Toxic Fireball" fireballLight="Freeze Toxic Loop" />
     <effect name="Холодный" muzzle="Freeze Cold Muzzle" muzzleLight="Freeze Cold Start" fireball="Freeze Cold Fireball" fireballLight="Freeze Cold Loop" />
   </freeze>
+  <isida>
+    <effect name="Обычный (лечение)">
+      <params muzzle="Isida Default Friend Muzzle" startLight="Freeze Default Start" shaft="Isida Default Friend Shaft" loopLight="Freeze Default Loop" />
+    </effect>
+    <effect name="Обычный (урон)">
+      <params muzzle="Isida Default Enemy Muzzle" startLight="Freeze Default Start" shaft="Isida Default Enemy Shaft" loopLight="Freeze Default Loop" />
+    </effect>
+    <effect name="Солнечный">
+      <params muzzle="Isida Sun Muzzle" startLight="Freeze Default Start" shaft="Isida Sun Shaft" loopLight="Freeze Default Loop" />
+    </effect>
+  </isida>
+  <hammer>
+    <effect name="Пустота">
+      <params across="Hammer Void Across" along="Hammer Void Along" pellet="Hammer Void Pellet" sparkle="Hammer Void Sparkle" />
+    </effect>
+    <effect name="Кровавый">
+      <params across="Hammer Blood Across" along="Hammer Blood Along" pellet="Hammer Blood Pellet" sparkle="Hammer Blood Sparkle" />
+    </effect>
+  </hammer>
+  <twins>
+    <effect name="Обычный">
+      <params muzzle="Twins Default Muzzle" shot="Twins Default Shot" explosion="Twins Default Explosion" />
+    </effect>
+  </twins>
+  <railgun>
+    <effect name="Обычный">
+      <params part1="Railgun Snow Part 1" part2="Railgun Snow Part 2" part3="Railgun Snow Part 3" trail="Railgun Snow Trail" />
+    </effect>
+  </railgun>
+  <striker>
+    <effect name="Обычный">
+      <params smoke="Striker Default Smoke" explosion="Striker Default Explosion" />
+    </effect>
+    <effect name="Синий">
+      <params smoke="Striker Blue Smoke" explosion="Striker Blue Explosion" />
+    </effect>
+  </striker>
+  <smoky>
+    <effect name="Обычный">
+      <params muzzle="Smoky Default Muzzle" explosion="Smoky Default Explosion" />
+    </effect>
+  </smoky>
+  <ricochet>
+    <effect name="Обычный" muzzle="Ricochet Smoke Muzzle" shot="Ricochet Smoke Shot" explosion="Ricochet Smoke Explosion" trail="Ricochet Smoke Trail" />
+  </ricochet>
   <textures>
-    <!--SkyBox sides-->
     <texture id="SkyBox 1" url="skybox/01.jpg" />
     <texture id="SkyBox 2" url="skybox/02.jpg" />
     <texture id="SkyBox 3" url="skybox/03.jpg" />
     <texture id="SkyBox 4" url="skybox/04.jpg" />
     <texture id="SkyBox 5" url="skybox/05.jpg" />
     <texture id="SkyBox 6" url="skybox/06.jpg" />
-    <!--FireBird-->
     <texture id="FireBird Default Muzzle" url="weapons/firebird/default/muzzle.png" />
     <texture id="FireBird Black Muzzle" url="weapons/firebird/black/muzzle.png" />
     <texture id="FireBird Crimson Muzzle" url="weapons/firebird/crimson/muzzle.png" />
@@ -36,15 +78,61 @@
     <texture id="FireBird Crimson Fireball" url="weapons/firebird/crimson/fireball.png" />
     <texture id="FireBird Magma Fireball" url="weapons/firebird/magma/fireball.png" />
     <texture id="FireBird Pink Fireball" url="weapons/firebird/pink/fireball.png" />
-    <!--Freeze-->
     <texture id="Freeze Default Muzzle" url="weapons/freeze/default/muzzle.png" />
     <texture id="Freeze Toxic Muzzle" url="weapons/freeze/toxic/muzzle.png" />
     <texture id="Freeze Cold Muzzle" url="weapons/freeze/cold/muzzle.png" />
     <texture id="Freeze Default Fireball" url="weapons/freeze/Default/fireball.png" />
     <texture id="Freeze Toxic Fireball" url="weapons/freeze/toxic/fireball.png" />
     <texture id="Freeze Cold Fireball" url="weapons/freeze/cold/fireball.png" />
+    <texture id="Isida Default Friend Muzzle" url="weapons/isida/default friend/muzzle.png" />
+    <texture id="Isida Default Enemy Muzzle" url="weapons/isida/default enemy/muzzle.png" />
+    <texture id="Isida Sun Muzzle" url="weapons/isida/sun/muzzle.png" />
+    <texture id="Isida Default Friend Shaft" url="weapons/isida/default friend/shaft.png" />
+    <texture id="Isida Default Enemy Shaft" url="weapons/isida/default enemy/shaft.png" />
+    <texture id="Isida Sun Shaft" url="weapons/isida/sun/shaft.png" />
+    <texture id="Hammer Smoke" url="weapons/hammer/smoke.png" />
+    <texture id="Hammer Decal 1" url="weapons/hammer/decal1.png" />
+    <texture id="Hammer Decal 2" url="weapons/hammer/decal2.png" />
+    <texture id="Hammer Decal 3" url="weapons/hammer/decal3.png" />
+    <texture id="Hammer Decal 4" url="weapons/hammer/decal4.png" />
+    <texture id="Hammer Blood Across" url="weapons/hammer/blood/across.png" />
+    <texture id="Hammer Void Across" url="weapons/hammer/void/across.png" />
+    <texture id="Hammer Blood Along" url="weapons/hammer/blood/along.png" />
+    <texture id="Hammer Void Along" url="weapons/hammer/void/along.png" />
+    <texture id="Hammer Blood Pellet" url="weapons/hammer/blood/pellet.png" />
+    <texture id="Hammer Void Pellet" url="weapons/hammer/void/pellet.png" />
+    <texture id="Hammer Blood Sparkle" url="weapons/hammer/blood/sparkle.png" />
+    <texture id="Hammer Void Sparkle" url="weapons/hammer/void/sparkle.png" />
+    <texture id="Viking Flame" url="ultimates/viking flame.jpg" />
+    <texture id="Viking Smoke" url="ultimates/viking smoke.png" />
+    <texture id="Hornet" url="ultimates/hornet.png" />
+    <texture id="Twins Default Muzzle" url="weapons/twins/default/muzzle.png" />
+    <texture id="Twins Default Shot" url="weapons/twins/default/shot.png" />
+    <texture id="Twins Default Explosion" url="weapons/twins/default/explosion.png" />
+    <texture id="Railgun Decal" url="weapons/railgun/decal.png" />
+    <texture id="Railgun Pow" url="weapons/railgun/pow.png" />
+    <texture id="Railgun Rings" url="weapons/railgun/rings.png" />
+    <texture id="Railgun Sphere" url="weapons/railgun/sphere.png" />
+    <texture id="Railgun Snow Trail" url="weapons/railgun/snow/trail.png" />
+    <texture id="Railgun Snow Smoke" url="weapons/railgun/snow/smoke.png" />
+    <texture id="Railgun Snow Part 1" url="weapons/railgun/snow/part1.png" />
+    <texture id="Railgun Snow Part 2" url="weapons/railgun/snow/part2.png" />
+    <texture id="Railgun Snow Part 3" url="weapons/railgun/snow/part3.png" />
+    <texture id="Striker Flame" url="weapons/striker/flame.jpg" />
+    <texture id="Striker Decal" url="weapons/striker/decal.png" />
+    <texture id="Striker Default Smoke" url="weapons/striker/default/smoke.png" />
+    <texture id="Striker Default Explosion" url="weapons/striker/default/explosion.png" />
+    <texture id="Striker Blue Smoke" url="weapons/striker/blue/smoke.png" />
+    <texture id="Striker Blue Explosion" url="weapons/striker/blue/explosion.png" />
+    <texture id="Smoky Default Muzzle" url="weapons/smoky/default/muzzle.png" />
+    <texture id="Smoky Default Explosion" url="weapons/smoky/default/explosion.png" />
+    <texture id="Smoky Decal" url="weapons/smoky/decal.png" />
     <texture id="Dust" url="dust.png" />
     <texture id="Smoke" url="smoke.png" />
+    <texture id="Ricochet Smoke Muzzle" url="weapons/ricochet/smoke/muzzle.png" />
+    <texture id="Ricochet Smoke Shot" url="weapons/ricochet/smoke/shot.png" />
+    <texture id="Ricochet Smoke Explosion" url="weapons/ricochet/smoke/explosion.png" />
+    <texture id="Ricochet Smoke Trail" url="weapons/ricochet/smoke/trail.png" />
   </textures>
   <sounds baseUrl="data/sounds/">
     <sound id="Battle" url="battle.mp3" />
@@ -57,7 +145,31 @@
     <sound id="Overdrive" url="tank/overdrive.mp3" />
     <sound id="FireBird" url="weapons/firebird.mp3" />
     <sound id="Freeze" url="weapons/freeze.mp3" />
+    <sound id="Isida" url="weapons/isida.mp3" />
     <sound id="Rankup" url="tank/rankup.mp3" />
+    <sound id="Hammer Shot" url="weapons/hammer_shot.mp3" />
+    <sound id="Hammer Shot Reload" url="weapons/hammer_shot_reload.mp3" />
+    <sound id="Hammer Clip Reload" url="weapons/hammer_clip_reload.mp3" />
+    <sound id="Viking Start" url="ultimates/viking start.mp3" />
+    <sound id="Viking End" url="ultimates/viking end.mp3" />
+    <sound id="Hornet" url="ultimates/hornet.mp3" />
+    <sound id="Hornet Start" url="ultimates/hornet start.mp3" />
+    <sound id="Viking" url="ultimates/viking.mp3" />
+    <sound id="Twins" url="weapons/twins.mp3" />
+    <sound id="Railgun" url="weapons/railgun.mp3" />
+    <sound id="Striker Aim 1" url="weapons/striker_aim_1.mp3" />
+    <sound id="Striker Aim 2" url="weapons/striker_aim_2.mp3" />
+    <sound id="Striker Aim 3" url="weapons/striker_aim_3.mp3" />
+    <sound id="Striker Hit 1" url="weapons/striker_hit_1.mp3" />
+    <sound id="Striker Hit 2" url="weapons/striker_hit_2.mp3" />
+    <sound id="Striker Rocket" url="weapons/striker_rocket.mp3" />
+    <sound id="Striker Shot 1" url="weapons/striker_shot_1.mp3" />
+    <sound id="Striker Shot 2" url="weapons/striker_shot_2.mp3" />
+    <sound id="Smoky Shot" url="weapons/smoky_shot.mp3" />
+    <sound id="Ricochet Shot" url="weapons/ricochet_shot.mp3" />
+    <sound id="Ricochet Ricochet" url="weapons/ricochet_ricochet.mp3" />
+    <sound id="Ricochet Explosion" url="weapons/ricochet_explosion.mp3" />
+    <sound id="Smoky Hit" url="weapons/smoky_hit.mp3" />
   </sounds>
   <textureAnimations>
     <animation id="FireBird Default Muzzle" texture="FireBird Default Muzzle">
@@ -108,11 +220,74 @@
     <animation id="Freeze Cold Fireball" texture="Freeze Cold Fireball">
       <params frameWidth="128" frameHeight="128" numFrames="13" fps="30" />
     </animation>
+    <animation id="Isida Default Friend Muzzle" texture="Isida Default Friend Muzzle">
+      <params frameWidth="128" frameHeight="128" numFrames="13" fps="30" />
+    </animation>
+    <animation id="Isida Default Friend Shaft" texture="Isida Default Friend Shaft">
+      <params frameWidth="128" frameHeight="128" numFrames="13" fps="30" />
+    </animation>
+    <animation id="Isida Default Enemy Muzzle" texture="Isida Default Enemy Muzzle">
+      <params frameWidth="128" frameHeight="128" numFrames="13" fps="30" />
+    </animation>
+    <animation id="Isida Default Enemy Shaft" texture="Isida Default Enemy Shaft">
+      <params frameWidth="128" frameHeight="128" numFrames="13" fps="30" />
+    </animation>
+    <animation id="Isida Sun Muzzle" texture="Isida Sun Muzzle">
+      <params frameWidth="128" frameHeight="128" numFrames="13" fps="30" />
+    </animation>
+    <animation id="Isida Sun Shaft" texture="Isida Sun Shaft">
+      <params frameWidth="128" frameHeight="128" numFrames="13" fps="30" />
+    </animation>
     <animation id="Dust" texture="Dust">
       <params frameWidth="32" frameHeight="32" numFrames="15" fps="30" />
     </animation>
     <animation id="Smoke" texture="Smoke">
       <params frameWidth="128" frameHeight="128" numFrames="25" fps="30" />
+    </animation>
+    <animation id="Hammer Smoke" texture="Hammer Smoke">
+      <params frameWidth="128" frameHeight="128" numFrames="25" fps="30" />
+    </animation>
+    <animation id="Hammer Blood Across" texture="Hammer Blood Across">
+      <params frameWidth="128" frameHeight="128" numFrames="25" fps="30" />
+    </animation>
+    <animation id="Hammer Blood Along" texture="Hammer Blood Along">
+      <params frameWidth="128" frameHeight="128" numFrames="25" fps="30" />
+    </animation>
+    <animation id="Hammer Void Across" texture="Hammer Void Across">
+      <params frameWidth="128" frameHeight="128" numFrames="25" fps="30" />
+    </animation>
+    <animation id="Hammer Void Along" texture="Hammer Void Along">
+      <params frameWidth="128" frameHeight="128" numFrames="25" fps="30" />
+    </animation>
+    <animation id="Twins Default Shot" texture="Twins Default Shot">
+      <params frameWidth="128" frameHeight="128" numFrames="10" fps="30" />
+    </animation>
+    <animation id="Twins Default Explosion" texture="Twins Default Explosion">
+      <params frameWidth="256" frameHeight="256" numFrames="16" fps="30" />
+    </animation>
+    <animation id="Striker Blue Explosion" texture="Striker Blue Explosion">
+      <params frameWidth="256" frameHeight="256" numFrames="32" fps="30" />
+    </animation>
+    <animation id="Striker Default Explosion" texture="Striker Default Explosion">
+      <params frameWidth="256" frameHeight="256" numFrames="32" fps="30" />
+    </animation>
+    <animation id="Railgun Pow" texture="Railgun Pow">
+      <params frameWidth="64" frameHeight="79" numFrames="6" fps="20" />
+    </animation>
+    <animation id="Railgun Rings" texture="Railgun Rings">
+      <params frameWidth="128" frameHeight="128" numFrames="11" fps="30" />
+    </animation>
+    <animation id="Railgun Sphere" texture="Railgun Sphere">
+      <params frameWidth="128" frameHeight="128" numFrames="11" fps="20" />
+    </animation>
+    <animation id="Smoky Default Explosion" texture="Smoky Default Explosion">
+      <params frameWidth="128" frameHeight="128" numFrames="25" fps="30" />
+    </animation>
+    <animation id="Ricochet Smoke Shot" texture="Ricochet Smoke Shot">
+      <params frameWidth="128" frameHeight="128" numFrames="10" fps="30" />
+    </animation>
+    <animation id="Ricochet Smoke Explosion" texture="Ricochet Smoke Explosion">
+      <params frameWidth="204" frameHeight="204" numFrames="20" fps="30" />
     </animation>
   </textureAnimations>
   <lightAnimations>
@@ -207,29 +382,306 @@
   </lightAnimations>
   <hulls>
     <hull id="Wasp HD" path="wasp/HD">
-      <params profile="Wasp M3" isHover="false" isInvertTracksDirection="false" />
+      <params profile="Wasp M3" isHover="false" />
+    </hull>
+    <hull id="Wasp XT" path="wasp/XT">
+      <params profile="Wasp M3" isHover="false" />
+    </hull>
+    <hull id="Wasp DC" path="wasp/DC">
+      <params profile="Wasp M3" isHover="false" />
     </hull>
     <hull id="Wasp LC" path="wasp/LC">
       <params profile="Wasp M3" isHover="false" />
     </hull>
     <hull id="Hornet HD" path="hornet/HD">
-      <params profile="Hornet M3" isHover="false" isInvertTracksDirection="false" />
+      <params profile="Hornet M3" isHover="false" />
+    </hull>
+    <hull id="Hornet XT" path="hornet/XT">
+      <params profile="Hornet M3" isHover="false" />
     </hull>
     <hull id="Hornet LC" path="hornet/LC">
+      <params profile="Hornet M3" isHover="false" />
+    </hull>
+    <hull id="Hornet PR" path="hornet/PR">
+      <params profile="Hornet M3" isHover="false" />
+    </hull>
+    <hull id="Hornet UT" path="hornet/UT">
+      <params profile="Hornet M3" isHover="false" isInvertTracksDirection="true" />
+    </hull>
+    <hull id="Hornet RL" path="hornet/RL">
+      <params profile="Hornet M3" isHover="false" />
+    </hull>
+    <hull id="Hornet TX XT" path="hornet/TX XT">
       <params profile="Hornet M3" isHover="false" />
     </hull>
     <hull id="Hopper HD" path="hopper/HD">
       <params profile="Hopper M3" isHover="true" />
     </hull>
+    <hull id="Hopper XT" path="hopper/XT">
+      <params profile="Hopper M3" isHover="true" />
+    </hull>
+    <hull id="Viking HD" path="viking/HD">
+      <params profile="Viking M3" isHover="false" isInvertTracksDirection="true" />
+    </hull>
+    <hull id="Viking XT" path="viking/XT">
+      <params profile="Viking M3" isHover="false" />
+    </hull>
+    <hull id="Viking LC" path="viking/LC">
+      <params profile="Viking M3" isHover="false" />
+    </hull>
+    <hull id="Viking PR" path="viking/PR">
+      <params profile="Viking M3" isHover="false" />
+    </hull>
+    <hull id="Viking UT" path="viking/UT">
+      <params profile="Viking M3" isHover="false" />
+    </hull>
+    <hull id="Viking DC" path="viking/DC">
+      <params profile="Viking M3" isHover="false" />
+    </hull>
+    <hull id="Viking GT" path="viking/GT">
+      <params profile="Viking M3" isHover="false" isGT="true" />
+    </hull>
+    <hull id="Hunter HD" path="hunter/HD">
+      <params profile="Hunter M3" isHover="false" />
+    </hull>
+    <hull id="Hunter XT" path="hunter/XT">
+      <params profile="Hunter M3" isHover="false" />
+    </hull>
+    <hull id="Hunter PR" path="hunter/PR">
+      <params profile="Hunter M3" isHover="false" />
+    </hull>
+    <hull id="Hunter UT" path="hunter/UT">
+      <params profile="Hunter M3" isHover="false" />
+    </hull>
+    <hull id="Hunter LC" path="hunter/LC">
+      <params profile="Hunter M3" isHover="false" />
+    </hull>
+    <hull id="Crusader HD" path="crusader/HD">
+      <params profile="Crusader M3" isHover="true" />
+    </hull>
+    <hull id="Crusader XT" path="crusader/XT">
+      <params profile="Crusader M3" isHover="true" />
+    </hull>
+    <hull id="Paladin HD" path="paladin/HD">
+      <params profile="Paladin M3" isHover="true" />
+    </hull>
+    <hull id="Paladin XT" path="paladin/XT">
+      <params profile="Paladin M3" isHover="true" />
+    </hull>
+    <hull id="Paladin RT" path="paladin/RT">
+      <params profile="Paladin M3" isHover="true" />
+    </hull>
+    <hull id="Dictator HD" path="dictator/HD">
+      <params profile="Dictator M3" isHover="false" isInvertTracksDirection="true" />
+    </hull>
+    <hull id="Dictator XT" path="dictator/XT">
+      <params profile="Dictator M3" isHover="false" />
+    </hull>
+    <hull id="Dictator LC" path="dictator/LC">
+      <params profile="Dictator M3" isHover="false" />
+    </hull>
+    <hull id="Ares HD" path="ares/HD">
+      <params profile="Ares M3" isHover="true" />
+    </hull>
+    <hull id="Ares XT" path="ares/XT">
+      <params profile="Ares M3" isHover="true" />
+    </hull>
+    <hull id="Titan M3" path="titan/m3">
+      <params profile="Titan M3" isHover="false" />
+    </hull>
+    <hull id="Titan XT" path="titan/XT">
+      <params profile="Titan M3" isHover="false" />
+    </hull>
+    <hull id="Titan PR" path="titan/PR">
+      <params profile="Titan M3" isHover="false" />
+    </hull>
+    <hull id="Titan LC" path="titan/LC">
+      <params profile="Titan M3" isHover="false" />
+    </hull>
+    <hull id="Mammoth HD" path="mammoth/HD">
+      <params profile="Mammoth M3" isHover="false" isInvertTracksDirection="false" />
+    </hull>
+    <hull id="Mammoth XT" path="mammoth/XT">
+      <params profile="Mammoth M3" isHover="false" />
+    </hull>
+    <hull id="Mammoth LC" path="mammoth/LC">
+      <params profile="Mammoth M3" isHover="false" />
+    </hull>
+    <hull id="Mammoth UT" path="mammoth/UT">
+      <params profile="Mammoth M3" isHover="false" isInvertTracksDirection="false" />
+    </hull>
+    <hull id="Mammoth SP" path="mammoth/SP">
+      <params profile="Mammoth M3" isHover="false" isInvertTracksDirection="false" />
+    </hull>
+    <hull id="Juggernaut M3" path="juggernaut/m3">
+      <params profile="Hornet M3" isHover="false" />
+    </hull>
+    <hull id="Juggernaut XT" path="juggernaut/XT">
+      <params profile="Hornet M3" isHover="false" />
+    </hull>
+    <hull id="Sonic HD" path="sonic/HD">
+      <params profile="Hornet M3" isHover="false" />
+    </hull>
+    <hull id="Sonic LC" path="sonic/LC">
+      <params profile="Hornet M3" isHover="false" />
+    </hull>
   </hulls>
   <turrets>
     <turret id="FireBird HD" path="firebird/HD" />
+    <turret id="FireBird XT" path="firebird/XT" />
+    <turret id="FireBird DC" path="firebird/DC" />
+    <turret id="FireBird DC Old" path="firebird/DC old" />
     <turret id="Freeze HD" path="freeze/HD" />
+    <turret id="Freeze XT" path="freeze/XT" />
+    <turret id="Freeze SE" path="freeze/SE" />
+    <turret id="Isida M3" path="isida/m3" />
+    <turret id="Isida XT" path="isida/XT" />
+    <turret id="Tesla HD" path="tesla/HD" />
+    <turret id="Tesla XT" path="tesla/XT" />
+    <turret id="Hammer M3" path="hammer/m3" />
+    <turret id="Hammer XT" path="hammer/XT" />
+    <turret id="Hammer LC" path="hammer/LC" />
+    <turret id="Twins HD" path="twins/HD" />
+    <turret id="Twins XT" path="twins/XT" />
+    <turret id="Twins SP" path="twins/SP" />
+    <turret id="Twins LC" path="twins/LC" />
+    <turret id="Ricochet HD" path="ricochet/HD" />
+    <turret id="Ricochet XT" path="ricochet/XT" />
+    <turret id="Ricochet LC" path="ricochet/LC" />
+    <turret id="Ricochet RT" path="ricochet/RT" />
+    <turret id="Smoky HD" path="smoky/HD" />
+    <turret id="Smoky XT" path="smoky/XT" />
+    <turret id="Smoky LC" path="smoky/LC" />
+    <turret id="Striker M3" path="striker/m3" />
+    <turret id="Striker XT" path="striker/XT" />
+    <turret id="Striker UT" path="striker/UT" />
+    <turret id="Vulcan M3" path="vulcan/m3" />
+    <turret id="Vulcan XT" path="vulcan/XT" />
+    <turret id="Vulcan PR" path="vulcan/PR" />
+    <turret id="Vulcan UT" path="vulcan/UT" />
+    <turret id="Thunder HD" path="thunder/HD" />
+    <turret id="Thunder XT" path="thunder/XT" />
+    <turret id="Thunder LC" path="thunder/LC" />
+    <turret id="Thunder PR" path="thunder/PR" />
+    <turret id="Thunder UT" path="thunder/UT" />
+    <turret id="Thunder GT" path="thunder/GT" />
+    <turret id="Scorpion HD" path="scorpion/HD" />
+    <turret id="Scorpion XT" path="scorpion/XT" />
+    <turret id="Railgun HD" path="railgun/HD" />
+    <turret id="Railgun XT" path="railgun/XT" />
+    <turret id="Railgun LC" path="railgun/LC" />
+    <turret id="Railgun PR" path="railgun/PR" />
+    <turret id="Railgun UT" path="railgun/UT" />
+    <turret id="Magnum M3" path="magnum/m3" />
+    <turret id="Magnum XT" path="magnum/XT" />
+    <turret id="Gauss M3" path="gauss/m3" />
+    <turret id="Gauss XT" path="gauss/XT" />
+    <turret id="Gauss PR" path="gauss/PR" />
+    <turret id="Gauss UT" path="gauss/UT" />
+    <turret id="Shaft M3" path="shaft/m3" />
+    <turret id="Shaft XT" path="shaft/XT" />
+    <turret id="Shaft LC" path="shaft/LC" />
+    <turret id="Terminator M3" path="terminator/m3" />
+    <turret id="Terminator XT" path="terminator/XT" />
+    <turret id="Bonk HD" path="bonk/HD" />
+    <turret id="Bonk HD Old" path="bonk/HD old" />
+    <turret id="Bonk Biomorphic Claw" path="bonk/Biomorphic Claw" />
+    <turret id="Snowman HD Green" path="snowman/HD green" />
+    <turret id="Snowman HD Blue" path="snowman/HD blue" />
+    <turret id="Snowman HD Red" path="snowman/HD red" />
+    <turret id="Tomato Gun HD" path="tomato gun/HD" />
   </turrets>
   <paints>
     <paint id="Green" path="garage/Green.jpg" />
-    <paint id="Holiday" path="garage/Holiday.jpg" />
-    <paint id="Holiday Old" path="garage/Holiday Old.jpg" />
+    <paint id="Red" path="garage/Red.jpg" />
+    <paint id="Blue" path="garage/Blue.jpg" />
+    <paint id="Orange" path="garage/Orange.jpg" />
+    <paint id="Black" path="garage/Black.jpg" />
+    <paint id="White" path="garage/White.jpg" />
+    <paint id="Metallic" path="garage/Metallic.jpg" />
+    <paint id="Flora" path="garage/Flora.jpg" />
+    <paint id="Marine" path="garage/Marine.jpg" />
+    <paint id="Swamp" path="garage/Swamp.jpg" />
+    <paint id="Forester" path="garage/Forester.jpg" />
+    <paint id="Magma" path="garage/Magma.jpg" />
+    <paint id="Storm" path="garage/Storm.jpg" />
+    <paint id="Confetti" path="garage/Confetti.jpg" />
+    <paint id="Dirty" path="garage/Dirty.jpg" />
+    <paint id="Swash" path="garage/Swash.jpg" />
+    <paint id="Guerrilla" path="garage/Guerrilla.jpg" />
+    <paint id="Desert" path="garage/Desert.jpg" />
+    <paint id="Corrosion" path="garage/Corrosion.jpg" />
+    <paint id="Pixel" path="garage/Pixel.jpg" />
+    <paint id="Tundra" path="garage/Tundra.jpg" />
+    <paint id="Vortex" path="garage/Vortex.jpg" />
+    <paint id="Fracture" path="garage/Fracture.jpg" />
+    <paint id="Cedar" path="garage/Cedar.jpg" />
+    <paint id="Grasslands" path="garage/Grasslands.jpg" />
+    <paint id="Moss" path="garage/Moss.jpg" />
+    <paint id="Sandstone" path="garage/Sandstone.jpg" />
+    <paint id="Digital" path="garage/Digital.jpg" />
+    <paint id="Rustle" path="garage/Rustle.jpg" />
+    <paint id="Loam" path="garage/Loam.jpg" />
+    <paint id="Winter" path="garage/Winter.jpg" />
+    <paint id="Urban" path="garage/Urban.jpg" />
+    <paint id="Savanna" path="garage/Savanna.jpg" />
+    <paint id="Cherry" path="garage/Cherry.jpg" />
+    <paint id="Mars" path="garage/Mars.jpg" />
+    <paint id="Jade" path="garage/Jade.jpg" />
+    <paint id="Red Urban" path="garage/Red Urban.jpg" />
+    <paint id="Taiga" path="garage/Taiga.jpg" />
+    <paint id="Prodigi" path="garage/Prodigi.jpg" />
+    <paint id="Rock" path="garage/Rock.jpg" />
+    <paint id="Needle" path="garage/Needle.jpg" />
+    <paint id="Picasso" path="garage/Picasso.jpg" />
+    <paint id="Clay" path="garage/Clay.jpg" />
+    <paint id="Lava" path="garage/Lava.jpg" />
+    <paint id="Lead" path="garage/Lead.jpg" />
+    <paint id="Invader" path="garage/Invader.jpg" />
+    <paint id="Sahara" path="garage/Sahara.jpg" />
+    <paint id="Night" path="garage/Night.jpg" />
+    <paint id="Carbon" path="garage/Carbon.jpg" />
+    <paint id="Chainmail" path="garage/Chainmail.jpg" />
+    <paint id="Harlequin" path="garage/Harlequin.jpg" />
+    <paint id="Pixel Heart" path="garage/Pixel Heart.jpg" />
+    <paint id="Roger" path="garage/Roger.jpg" />
+    <paint id="Sakura" path="garage/Sakura.jpg" />
+    <paint id="Electra" path="garage/Electra.jpg" />
+    <paint id="Soft Flowers" path="garage/Soft Flowers.jpg" />
+    <paint id="First Love" path="garage/First Love.jpg" />
+    <paint id="Jeans" path="garage/Jeans.jpg" />
+    <paint id="Rhino" path="garage/Rhino.jpg" />
+    <paint id="Atom" path="garage/Atom.jpg" />
+    <paint id="Sweater" path="garage/Sweater.jpg" />
+    <paint id="Disco" path="garage/Disco.jpg" />
+    <paint id="Hive" path="garage/Hive.jpg" />
+    <paint id="Kaleidoscope" path="garage/Kaleidoscope.jpg" />
+    <paint id="Raccoon" path="garage/Raccoon.jpg" />
+    <paint id="Space" path="garage/Space.jpg" />
+    <paint id="Lumberjack" path="garage/Lumberjack.jpg" />
+    <paint id="Graffiti" path="garage/Graffiti.jpg" />
+    <paint id="Safari" path="garage/Safari.jpg" />
+    <paint id="Dragon" path="garage/Dragon.jpg" />
+    <paint id="Jaguar" path="garage/Jaguar.jpg" />
+    <paint id="Python" path="garage/Python.jpg" />
+    <paint id="Irbis" path="garage/Irbis.jpg" />
+    <paint id="Tiger" path="garage/Tiger.jpg" />
+    <paint id="Mary" path="garage/Mary.jpg" />
+    <paint id="In Love" path="garage/In Love.jpg" />
+    <paint id="Alien" path="garage/Alien.jpg" />
+    <paint id="Spark" path="garage/Spark.jpg" />
+    <paint id="Blacksmith" path="garage/Blacksmith.jpg" />
+    <paint id="Hohloma" path="garage/Hohloma.jpg" />
+    <paint id="Emerald" path="garage/Emerald.jpg" />
+    <paint id="Inferno" path="garage/Inferno.jpg" />
+    <paint id="Nano" path="garage/Nano.jpg" />
+    <paint id="Zeus" path="garage/Zeus.jpg" />
+    <paint id="Africa" path="garage/Africa.jpg" />
+    <paint id="Frost" path="garage/Frost.jpg" />
+    <paint id="Golden Star" path="garage/Golden Star.jpg" />
+    <paint id="Flow" path="shop/Flow.jpg">
+      <params frameWidth="256" frameHeight="256" fps="16" numFrames="16" />
+    </paint>
     <paint id="Bunny" path="animated/Bunny.jpg">
       <params frameWidth="128" frameHeight="128" fps="24" numFrames="64" />
     </paint>
@@ -245,11 +697,50 @@
     <paint id="Matrix" path="animated/Matrix.jpg">
       <params frameWidth="64" frameHeight="64" fps="18" numFrames="10" />
     </paint>
+    <paint id="Monochrome" path="animated/Monochrome.jpg">
+      <params frameWidth="1" frameHeight="1" fps="30" numFrames="1000" />
+    </paint>
+    <paint id="Not a lantern" path="animated/Not a lantern.jpg">
+      <params frameWidth="128" frameHeight="128" fps="32" numFrames="64" />
+    </paint>
+    <paint id="Silver Bricks" path="animated/Silver Bricks.jpg">
+      <params frameWidth="64" frameHeight="64" fps="32" numFrames="64" />
+    </paint>
   </paints>
   <drones>
     <drone id="Brutus" path="brutus" />
+    <drone id="Hyperion" path="hyperion" />
+    <drone id="Crisis" path="crisis" />
+    <drone id="Hyperion XT" path="hyperion XT" />
+    <drone id="Crisis XT" path="crisis XT" />
+    <drone id="Driver" path="driver" />
+    <drone id="Sprinter" path="sprinter" />
+    <drone id="Assault" path="assault" />
+    <drone id="Blaster" path="blaster" />
+    <drone id="Booster" path="booster" />
+    <drone id="Trickster" path="trickster" />
+    <drone id="Trooper" path="trooper" />
+    <drone id="Miner" path="miner" />
+    <drone id="Lifeguard" path="lifeguard" />
+    <drone id="Saboteur" path="saboteur" />
+    <drone id="Defender" path="defender" />
+    <drone id="Engineer" path="engineer" />
+    <drone id="Supplier" path="supplier" />
+    <drone id="Mechanic" path="mechanic" />
+    <drone id="Camper" path="camper" />
+    <drone id="UFO" path="ufo" />
+    <drone id="Pumpkin" path="pumpkin" />
+    <drone id="TX" path="TX" />
   </drones>
   <bonuses>
-    <bonus id="Gold HD" path="gold/hd" />
+    <bonus id="Crystal HD" path="crystal/HD" />
+    <bonus id="RK HD" path="RK/HD" />
+    <bonus id="DD HD" path="DD/HD" />
+    <bonus id="DA HD" path="DA/HD" />
+    <bonus id="DS HD" path="DS/HD" />
+    <bonus id="NE HD" path="NE/HD" />
+    <bonus id="Gold HD" path="gold/HD" />
+    <bonus id="Container HD" path="container/HD" />
+    <bonus id="Megagold HD" path="megagold/HD" />
   </bonuses>
 </config>
