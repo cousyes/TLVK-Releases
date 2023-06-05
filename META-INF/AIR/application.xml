@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns="http://ns.adobe.com/air/application/4.0">
+	<id>TLVKRELOAD</id>
+	<versionNumber>2.8</versionNumber>
+	<filename>TLVK_RELOAD</filename>
+	<name>TLVK_RELOAD</name>
+	<description>
+	</description>
+	<copyright>MaxTank</copyright>
+	<initialWindow>
+		<title>TLVK RELOAD (2.8)</title>
+		<content>TLVK_RELOAD.swf</content>
+		<systemChrome>standard</systemChrome>
+		<transparent>false</transparent>
+		<visible>true</visible>
+		<minimizable>true</minimizable>
+		<maximizable>true</maximizable>
+		<resizable>true</resizable>
+		<renderMode>direct</renderMode>
+		<depthAndStencil>true</depthAndStencil>
+	</initialWindow>
+	<icon>
+		<image128x128>icons/icon128.png</image128x128>
+	</icon>
+</application>
